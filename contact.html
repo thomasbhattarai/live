@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Discover Nepal Travel - Get in touch for trekking, tours, packages inquiries. Office location, WhatsApp, phone details and contact form.">
+    <title>Contact Us - Discover Nepal Travel Agency</title>
+    <meta name="cloudflare-email-protection" content="no-protection">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Discover<span>Nepal</span></a>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore-nepal.html">Explore Nepal</a></li>
+                    <li><a href="trekking-in-nepal.html">Trekking</a></li>
+                    <li><a href="tours-in-nepal.html">Tours</a></li>
+                    <li><a href="travel-packages.html">Packages</a></li>
+                    <li><a href="travel-guide.html">Travel Guide</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/contact.webp');">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our travel experts for your Nepal adventure</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Office</h3>
+                            <p>Discover Nepal Travel Pvt. Ltd.</p>
+                            <p>Thamel, Kathmandu 44600, Nepal</p>
+                            <p><strong>Opening Hours:</strong> Sunday-Friday, 9:00 AM - 6:00 PM</p>
+                            <p><em>(Closed on Saturdays and public holidays)</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone & WhatsApp</h3>
+                            <p><strong>Office:</strong> +977-1-1234567</p>
+                            <p><strong>Mobile/WhatsApp:</strong> +977-9801234567</p>
+                            <p><strong>Emergency (24/7):</strong> +977-9807654321</p>
+                            <p><strong>Response Time:</strong> Within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><strong>General Inquiries:</strong> info@discovernepal.com</p>
+                            <p><strong>Trekking Bookings:</strong> trekking@discovernepal.com</p>
+                            <p><strong>Tour Bookings:</strong> tours@discovernepal.com</p>
+                            <p><strong>Custom Packages:</strong> customize@discovernepal.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-headset"></i>
+                        <div>
+                            <h3>Quick Connect</h3>
+                            <div class="social-links" style="margin-top: 1rem;">
+                                <a href="#" style="background-color: #1877f2;"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" style="background-color: #e4405f;"><i class="fab fa-instagram"></i></a>
+                                <a href="#" style="background-color: #1da1f2;"><i class="fab fa-twitter"></i></a>
+                                <a href="#" style="background-color: #25d366;"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#" style="background-color: #ff0000;"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <p class="mt-2">Message us directly on social media for quick responses.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Time Zone</h3>
+                            <p><strong>Nepal Time:</strong> GMT+5:45</p>
+                            <p><strong>Current Time in Kathmandu:</strong> <span id="nepalTime"></span></p>
+                            <p><strong>Business Hours:</strong> 9:00 AM - 6:00 PM (NPT)</p>
+                            <p>We respond to emails within 24 hours and WhatsApp messages within 2-4 hours during business days.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and our travel expert will contact you within 24 hours.</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input type="text" id="country">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiryType">Type of Inquiry *</label>
+                            <select id="inquiryType" required>
+                                <option value="">Select inquiry type</option>
+                                <option value="trekking">Trekking Information</option>
+                                <option value="tour">Tour Information</option>
+                                <option value="package">Package Booking</option>
+                                <option value="custom">Custom Trip Request</option>
+                                <option value="group">Group/Corporate Inquiry</option>
+                                <option value="general">General Question</option>
+                                <option value="feedback">Feedback/Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="travelDate">Preferred Travel Date</label>
+                            <input type="month" id="travelDate">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers</label>
+                            <select id="travelers">
+                                <option value="">Select number</option>
+                                <option value="1">Solo Traveler</option>
+                                <option value="2">2 People</option>
+                                <option value="3-4">3-4 People</option>
+                                <option value="5-10">5-10 People</option>
+                                <option value="10+">10+ People</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" rows="5" required placeholder="Please include details about your travel interests, any specific requirements, and questions you may have..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label style="display: flex; align-items: flex-start; gap: 10px;">
+                                <input type="checkbox" required style="margin-top: 3px;">
+                                <span>I agree to the <a href="privacy-policy.html">Privacy Policy</a> and consent to being contacted by Discover Nepal Travel regarding my inquiry.</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                        <p style="font-size: 0.9rem; color: #64748b; margin-top: 1rem;">We respect your privacy and will never share your information with third parties.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <div class="activity-content">
+                        <h3><i class="far fa-question-circle" style="color: #3b82f6;"></i> How quickly will you respond?</h3>
+                        <p>We respond to emails within 24 hours and WhatsApp messages within 2-4 hours during business hours (Sunday-Friday, 9AM-6PM Nepal Time).</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-content">
+                        <h3><i class="far fa-question-circle" style="color: #3b82f6;"></i> Do you offer video consultations?</h3>
+                        <p>Yes! We offer free 30-minute video consultations via Zoom, Skype, or WhatsApp Video to discuss your trip plans in detail.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-content">
+                        <h3><i class="far fa-question-circle" style="color: #3b82f6;"></i> What payment methods do you accept?</h3>
+                        <p>We accept bank transfers, credit cards (Visa/Mastercard), PayPal, and cash payments in USD, EUR, or NPR at our office.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-content">
+                        <h3><i class="far fa-question-circle" style="color: #3b82f6;"></i> Can I visit your office in Kathmandu?</h3>
+                        <p>Absolutely! Our office in Thamel is open Sunday-Friday, 9AM-6PM. No appointment needed, but booking one ensures dedicated time with our experts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <p>Have more questions? Check our <a href="travel-guide.html" class="highlight">Travel Guide</a> or <a href="contact.html" class="highlight">contact us directly</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Our Office</h2>
+                <p>Visit us in Kathmandu</p>
+            </div>
+            
+            <div class="region-item">
+                <div class="region-item-content">
+                    <h3>Location & Directions</h3>
+                    <p><strong>Address:</strong> Discover Nepal Travel Pvt. Ltd., Thamel, Kathmandu 44600, Nepal</p>
+                    
+                    <div style="margin: 2rem 0; padding: 1.5rem; background-color: #f1f5f9; border-radius: var(--border-radius);">
+                        <h4>From Tribhuvan International Airport:</h4>
+                        <p><strong>Taxi:</strong> 20-30 minutes, NPR 500-800 (approx. $4-7)</p>
+                        <p><strong>Directions:</strong> Tell the driver "Thamel, near Kathmandu Guest House"</p>
+                        
+                        <h4 class="mt-2">Public Transport:</h4>
+                        <p><strong>Bus/Tempo:</strong> Take any bus going to Ratna Park, then transfer to Thamel (30-45 mins, NPR 50)</p>
+                        
+                        <h4 class="mt-2">Landmarks:</h4>
+                        <p>Our office is located in the main Thamel area, near Kathmandu Guest House, opposite Himalayan Java Coffee.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <p><strong>Office Map Coming Soon</strong></p>
+                        <p style="font-size: 0.9rem; color: #64748b;">(Interactive map will be implemented with Google Maps API)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer structure -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Discover Nepal</h3>
+                    <p>Your trusted partner for unforgettable Himalayan adventures since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="trekking-in-nepal.html">Trekking Packages</a></li>
+                        <li><a href="tours-in-nepal.html">Tour Packages</a></li>
+                        <li><a href="travel-guide.html">Travel Guide</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Options</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html#office">Visit Our Office</a></li>
+                        <li><a href="contact.html#whatsapp">WhatsApp Chat</a></li>
+                        <li><a href="contact.html#email">Email Inquiry</a></li>
+                        <li><a href="contact.html#form">Contact Form</a></li>
+                        <li><a href="contact.html#faq">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977-1-1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@discovernepal.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +977-9801234567</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Discover Nepal Travel. All rights reserved. | 
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="terms-conditions.html">Terms & Conditions</a> | 
+                    <a href="cancellation-policy.html">Cancellation Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Display Nepal Time
+        function updateNepalTime() {
+            const now = new Date();
+            // Nepal is GMT+5:45
+            const offset = 5.75 * 60 * 60 * 1000;
+            const nepalTime = new Date(now.getTime() + offset);
+            
+            const options = {
+                timeZone: 'Asia/Kathmandu',
+                hour12: true,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            
+            const formatter = new Intl.DateTimeFormat('en-US', options);
+            document.getElementById('nepalTime').textContent = formatter.format(nepalTime) + ' NPT';
+        }
+        
+        // Update time immediately and every second
+        updateNepalTime();
+        setInterval(updateNepalTime, 1000);
+        
+        // Enhanced form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const inquiryType = document.getElementById('inquiryType');
+            const message = document.getElementById('message');
+            
+            // Reset errors
+            document.querySelectorAll('.error-message').forEach(el => el.remove());
+            document.querySelectorAll('.form-group input, .form-group textarea, .form-group select').forEach(el => {
+                el.classList.remove('error');
+            });
+            
+            // Validation
+            if (!name.value.trim()) {
+                showError(name, 'Please enter your name');
+                isValid = false;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim()) {
+                showError(email, 'Please enter your email');
+                isValid = false;
+            } else if (!emailRegex.test(email.value)) {
+                showError(email, 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            if (!inquiryType.value) {
+                showError(inquiryType, 'Please select inquiry type');
+                isValid = false;
+            }
+            
+            if (!message.value.trim()) {
+                showError(message, 'Please enter your message');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                // Simulate API call
+                setTimeout(() => {
+                    alert('Thank you for your message! Our travel expert will contact you within 24 hours.');
+                    this.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    
+                    // Scroll to top
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 2000);
+            }
+        });
+        
+        function showError(input, message) {
+            input.classList.add('error');
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.style.color = '#dc2626';
+            errorDiv.style.fontSize = '0.875rem';
+            errorDiv.style.marginTop = '0.25rem';
+            errorDiv.textContent = message;
+            input.parentNode.appendChild(errorDiv);
+        }
+        
+        // Add red border to error fields in CSS
+        const style = document.createElement('style');
+        style.textContent = '.error { border-color: #dc2626 !important; }';
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

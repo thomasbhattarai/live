@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Discover Nepal Travel Updates</title>
+    <subtitle>Latest news, travel tips, and updates from Discover Nepal Travel</subtitle>
+    <link href="https://www.discovernepal.com/atom.xml" rel="self" type="application/atom+xml" />
+    <link href="https://www.discovernepal.com/" rel="alternate" type="text/html" />
+    <id>urn:uuid:60a76c80-d399-11d9-b93c-0003939e0af6</id>
+    <updated>2024-03-15T10:30:45+05:45</updated>
+    
+    <author>
+        <name>Discover Nepal Travel</name>
+        <email>info@discovernepal.com</email>
+        <uri>https://www.discovernepal.com/</uri>
+    </author>
+    
+    <generator uri="https://www.discovernepal.com/" version="1.0">
+        Discover Nepal Travel Content Management System
+    </generator>
+    
+    <rights>Copyright © 2024 Discover Nepal Travel. Some rights reserved.</rights>
+    <logo>https://www.discovernepal.com/images/logo.png</logo>
+    <icon>https://www.discovernepal.com/favicon.ico</icon>
+    
+    <!-- Blog Posts -->
+    <entry>
+        <title type="html"><![CDATA[10 Essential Trekking Tips for Everest Base Camp]]></title>
+        <link href="https://www.discovernepal.com/blog/trekking-tips.html" rel="alternate" type="text/html" />
+        <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
+        <updated>2024-03-15T08:00:00+05:45</updated>
+        <published>2024-03-15T08:00:00+05:45</published>
+        
+        <author>
+            <name>Rajesh Thapa</name>
+            <email>rajesh@discovernepal.com</email>
+            <uri>https://www.discovernepal.com/about-us.html#rajesh</uri>
+        </author>
+        
+        <contributor>
+            <name>Sunita Gurung</name>
+        </contributor>
+        
+        <category term="Trekking" scheme="https://www.discovernepal.com/category/trekking" label="Trekking" />
+        <category term="Everest" scheme="https://www.discovernepal.com/tag/everest" label="Everest" />
+        <category term="Tips" scheme="https://www.discovernepal.com/tag/tips" label="Tips" />
+        
+        <summary type="html">
+            <![CDATA[Complete guide to preparing for EBC trek - from physical training to packing list and altitude acclimatization strategies.]]>
+        </summary>
+        
+        <content type="html" xml:base="https://www.discovernepal.com/blog/trekking-tips.html">
+            <![CDATA[
+                <h2>10 Essential Trekking Tips for Everest Base Camp</h2>
+                <p>Complete guide to preparing for Everest Base Camp trek - from physical training to packing list and altitude acclimatization strategies.</p>
+                
+                <h3>What You'll Learn:</h3>
+                <ul>
+                    <li>Physical preparation and training schedule</li>
+                    <li>Essential gear and packing checklist</li>
+                    <li>Altitude sickness prevention and treatment</li>
+                    <li>Best time to trek to Everest Base Camp</li>
+                    <li>Permit requirements and costs</li>
+                </ul>
+                
+                <p><a href="https://www.discovernepal.com/blog/trekking-tips.html">Continue reading...</a></p>
+            ]]>
+        </content>
+        
+        <link href="https://www.discovernepal.com/images/blog-trekking-tips.jpg" rel="enclosure" type="image/jpeg" length="123456" />
+    </entry>
+    
+    <entry>
+        <title type="html"><![CDATA[Nepali Festivals: A Month-by-Month Guide]]></title>
+        <link href="https://www.discovernepal.com/blog/nepali-festivals.html" rel="alternate" type="text/html" />
+        <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6b</id>
+        <updated>2024-02-28T10:30:00+05:45</updated>
+        <published>2024-02-28T10:30:00+05:45</published>
+        
+        <author>
+            <name>Sunita Gurung</name>
+            <email>sunita@discovernepal.com</email>
+        </author>
+        
+        <category term="Culture" />
+        <category term="Festivals" />
+        <category term="Events" />
+        
+        <summary type="html">
+            <![CDATA[Discover Nepal's vibrant festival calendar. Plan your trip around colorful celebrations like Dashain, Tihar, Holi, and more.]]>
+        </summary>
+        
+        <content type="html">
+            <![CDATA[
+                <h2>Nepali Festivals: A Month-by-Month Guide</h2>
+                <p>Discover Nepal's vibrant festival calendar with our month-by-month guide.</p>
+                
+                <h3>Featured Festivals:</h3>
+                <ul>
+                    <li><strong>Dashain</strong> (September/October): Nepal's biggest festival</li>
+                    <li><strong>Tihar</strong> (October/November): Festival of Lights</li>
+                    <li><strong>Holi</strong> (March): Festival of Colors</li>
+                    <li><strong>Buddha Jayanti</strong> (May): Buddha's birthday celebration</li>
+                </ul>
+                
+                <p><a href="https://www.discovernepal.com/blog/nepali-festivals.html">Continue reading...</a></p>
+            ]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title type="html"><![CDATA[Spring 2024 Trekking Special: 15% Off Annapurna Circuit]]></title>
+        <link href="https://www.discovernepal.com/special-offers.html" rel="alternate" type="text/html" />
+        <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6c</id>
+        <updated>2024-03-04T12:00:00+05:45</updated>
+        <published>2024-03-04T12:00:00+05:45</published>
+        
+        <author>
+            <name>Discover Nepal Travel</name>
+        </author>
+        
+        <category term="Special Offers" />
+        <category term="Trekking" />
+        <category term="Annapurna" />
+        
+        <summary type="html">
+            <![CDATA[Book your Annapurna Circuit trek for Spring 2024 and get 15% discount. Limited spots available!]]>
+        </summary>
+        
+        <content type="html">
+            <![CDATA[
+                <h2>Spring 2024 Trekking Special</h2>
+                <p>Get 15% off on Annapurna Circuit trek bookings for Spring 2024 season.</p>
+                
+                <h3>Offer Details:</h3>
+                <ul>
+                    <li>Valid for bookings made before April 15, 2024</li>
+                    <li>For treks starting March-June 2024</li>
+                    <li>Includes guide, porter, permits, and accommodation</li>
+                    <li>Group discounts available for 4+ people</li>
+                </ul>
+                
+                <p><a href="https://www.discovernepal.com/special-offers.html">View all special offers</a></p>
+            ]]>
+        </content>
+    </entry>
+    
+    <!-- Company Updates -->
+    <entry>
+        <title type="html"><![CDATA[We've Expanded Our Team!]]></title>
+        <link href="https://www.discovernepal.com/about-us.html#team" rel="alternate" type="text/html" />
+        <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6d</id>
+        <updated>2024-02-15T09:00:00+05:45</updated>
+        <published>2024-02-15T09:00:00+05:45</published>
+        
+        <author>
+            <name>Discover Nepal Travel</name>
+        </author>
+        
+        <category term="Company News" />
+        <category term="Team" />
+        
+        <summary type="html">
+            <![CDATA[We're excited to announce the addition of 3 new certified trekking guides to our team!]]>
+        </summary>
+        
+        <content type="html">
+            <![CDATA[
+                <h2>Team Expansion Announcement</h2>
+                <p>We're excited to announce the addition of 3 new certified trekking guides to our team!</p>
+                
+                <p>Our new guides bring expertise in:</p>
+                <ul>
+                    <li>High-altitude trekking and safety</li>
+                    <li>Wildlife and bird watching</li>
+                    <li>Cultural heritage interpretation</li>
+                </ul>
+                
+                <p><a href="https://www.discovernepal.com/about-us.html#team">Meet our team</a></p>
+            ]]>
+        </content>
+    </entry>
+</feed>

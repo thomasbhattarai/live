@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Internal Server Error - Discover Nepal Travel</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+        }
+        
+        .error-content {
+            max-width: 800px;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #ef4444;
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+            line-height: 1;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #f59e0b;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        
+        .error-status {
+            background: rgba(239, 68, 68, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .error-status h3 {
+            color: #ef4444;
+            margin-bottom: 1rem;
+        }
+        
+        .technical-info {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            text-align: left;
+            font-family: monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+        
+        .contact-emergency {
+            background: rgba(16, 185, 129, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        
+        .contact-emergency h3 {
+            color: #10b981;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="error-code">500</div>
+            
+            <h1 class="error-title">Internal Server Error</h1>
+            
+            <div class="error-message">
+                <p>It seems our servers are experiencing some technical difficulties while trying to show you the majestic Himalayas.</p>
+                <p>Our technical team has been notified and is working to resolve the issue.</p>
+            </div>
+            
+            <div class="error-status">
+                <h3><i class="fas fa-exclamation-triangle"></i> Current Status</h3>
+                <ul>
+                    <li><strong>Error Type:</strong> Internal Server Error (500)</li>
+                    <li><strong>Time:</strong> <span id="current-time">Loading...</span></li>
+                    <li><strong>Report ID:</strong> ERR-500-<span id="error-id">0a1b2c3d</span></li>
+                    <li><strong>Status:</strong> Our team is investigating</li>
+                </ul>
+            </div>
+            
+            <div class="error-actions">
+                <a href="index.html" class="btn">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+                <a href="javascript:location.reload()" class="btn btn-secondary">
+                    <i class="fas fa-redo"></i> Try Again
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                    <i class="fas fa-headset"></i> Contact Support
+                </a>
+            </div>
+            
+            <div class="technical-info">
+                <h4><i class="fas fa-bug"></i> Technical Information (For Support Team)</h4>
+                <p>Error ID: <code>ERR-500-0a1b2c3d</code></p>
+                <p>Timestamp: <span id="timestamp"></span></p>
+                <p>User Agent: <code><span id="user-agent"></span></code></p>
+                <p>Referrer: <code><span id="referrer"></span></code></p>
+                <p>Requested URL: <code><span id="requested-url"></span></code></p>
+            </div>
+            
+            <div class="contact-emergency">
+                <h3><i class="fas fa-life-ring"></i> Need Immediate Assistance?</h3>
+                <p>If you're trying to make a booking or need urgent travel information:</p>
+                <p><strong>Email:</strong> emergency@discovernepal.com</p>
+                <p><strong>WhatsApp:</strong> +977-9807654321 (24/7)</p>
+                <p><strong>Phone:</strong> +977-1-9876543</p>
+            </div>
+            
+            <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+                <p><i class="fas fa-info-circle"></i> This error has been logged. Our team will investigate and fix it as soon as possible.</p>
+                <p>Thank you for your patience while we work to restore normal service.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Update current time
+        function updateTime() {
+            const now = new Date();
+            const options = {
+                timeZone: 'Asia/Kathmandu',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            };
+            const formatter = new Intl.DateTimeFormat('en-US', options);
+            document.getElementById('current-time').textContent = formatter.format(now);
+            document.getElementById('timestamp').textContent = now.toISOString();
+        }
+        
+        // Generate random error ID
+        function generateErrorId() {
+            return Math.random().toString(36).substring(2, 10);
+        }
+        
+        // Display browser information
+        document.getElementById('error-id').textContent = generateErrorId();
+        document.getElementById('user-agent').textContent = navigator.userAgent;
+        document.getElementById('referrer').textContent = document.referrer || 'Direct visit';
+        document.getElementById('requested-url').textContent = window.location.href;
+        
+        // Update time immediately and every second
+        updateTime();
+        setInterval(updateTime, 1000);
+        
+        // Auto-retry after 30 seconds
+        setTimeout(() => {
+            document.querySelector('.error-status ul').innerHTML += '<li><strong>Auto-retry:</strong> Attempting to reconnect...</li>';
+            setTimeout(() => {
+                location.reload();
+            }, 5000);
+        }, 30000);
+        
+        // Check server status
+        async function checkServerStatus() {
+            try {
+                const response = await fetch('/');
+                if (response.ok) {
+                    document.querySelector('.error-status ul').innerHTML += '<li><strong>Server Status:</strong> <span style="color: #10b981;">Back Online ✓</span></li>';
+                    setTimeout(() => {
+                        location.reload();
+                    }, 2000);
+                }
+            } catch (error) {
+                // Server still down
+                console.log('Server status check failed');
+            }
+        }
+        
+        // Check server status every 10 seconds
+        setInterval(checkServerStatus, 10000);
+    </script>
+</body>
+</html>

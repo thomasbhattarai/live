@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - Discover Nepal Travel. The page you're looking for doesn't exist or has been moved.">
+    <title>404 Page Not Found - Discover Nepal Travel</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .error-hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('images/404-bg.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        
+        .error-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .error-search {
+            max-width: 500px;
+            margin: 2rem auto;
+            position: relative;
+        }
+        
+        .error-search input {
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .error-search button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .error-search button:hover {
+            background: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Discover<span>Nepal</span></a>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore-nepal.html">Explore Nepal</a></li>
+                    <li><a href="trekking-in-nepal.html">Trekking</a></li>
+                    <li><a href="tours-in-nepal.html">Tours</a></li>
+                    <li><a href="travel-packages.html">Packages</a></li>
+                    <li><a href="travel-guide.html">Travel Guide</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="error-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="error-code error-animation">404</div>
+                <h1>Lost in the Himalayas</h1>
+                <p>The page you're looking for seems to have wandered off on a trek. Don't worry, even seasoned explorers sometimes take wrong turns.</p>
+                
+                <div class="cta-buttons mt-3">
+                    <a href="index.html" class="btn">
+                        <i class="fas fa-home"></i> Back to Home
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        <i class="fas fa-life-ring"></i> Get Help
+                    </a>
+                </div>
+                
+                <div class="error-search">
+                    <input type="text" placeholder="Search for treks, tours, or information...">
+                    <button><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Your Way Back</h2>
+                <p>Here are some popular pages you might be looking for</p>
+            </div>
+            
+            <div class="why-choose">
+                <div class="feature-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Popular Treks</h3>
+                    <p>Explore our most sought-after trekking routes in Nepal.</p>
+                    <a href="trekking-in-nepal.html" class="btn btn-secondary mt-2">View Treks</a>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Tour Packages</h3>
+                    <p>Discover cultural, wildlife, and adventure tours.</p>
+                    <a href="tours-in-nepal.html" class="btn btn-secondary mt-2">View Tours</a>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-suitcase"></i>
+                    <h3>Travel Packages</h3>
+                    <p>All-inclusive packages for every budget.</p>
+                    <a href="travel-packages.html" class="btn btn-secondary mt-2">View Packages</a>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Travel Guide</h3>
+                    <p>Essential information for planning your trip.</p>
+                    <a href="travel-guide.html" class="btn btn-secondary mt-2">Read Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Still Can't Find What You Need?</h2>
+                <p>Try these options</p>
+            </div>
+            
+            <div class="contact-info" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="info-card">
+                    <i class="fas fa-sitemap"></i>
+                    <div>
+                        <h3>Browse Sitemap</h3>
+                        <p>View our complete website structure to find what you're looking for.</p>
+                        <a href="sitemap.html" class="btn btn-secondary mt-2">View Sitemap</a>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-search"></i>
+                    <div>
+                        <h3>Search Our Website</h3>
+                        <p>Use our search feature to find specific content.</p>
+                        <div class="error-search" style="margin-top: 1rem;">
+                            <input type="text" placeholder="Search keywords...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <h3>Contact Support</h3>
+                        <p>Our team is here to help you find the information you need.</p>
+                        <a href="contact.html" class="btn btn-secondary mt-2">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <p>Or you might want to check if there was a typo in the URL. If you believe this is an error on our part, please <a href="contact.html">let us know</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Discover Nepal</h3>
+                    <p>Your trusted partner for unforgettable Himalayan adventures since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="trekking-in-nepal.html">Trekking Packages</a></li>
+                        <li><a href="tours-in-nepal.html">Tour Packages</a></li>
+                        <li><a href="travel-guide.html">Travel Guide</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Utility Pages</h3>
+                    <ul class="footer-links">
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="cancellation-policy.html">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977-1-1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@discovernepal.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +977-9801234567</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Discover Nepal Travel. All rights reserved. | 
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="terms-conditions.html">Terms & Conditions</a> | 
+                    <a href="cancellation-policy.html">Cancellation Policy</a>
+                </p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                    <i class="fas fa-exclamation-circle"></i> If you reached this page in error, please check the URL or use our navigation menu.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Simple search functionality for 404 page
+        document.querySelectorAll('.error-search button').forEach(button => {
+            button.addEventListener('click', function() {
+                const searchInput = this.parentElement.querySelector('input');
+                const query = searchInput.value.trim();
+                
+                if (query) {
+                    // In a real implementation, this would redirect to search results
+                    alert('Searching for: ' + query + '\n\nIn a live website, this would redirect to search results page.');
+                    // window.location.href = '/search.html?q=' + encodeURIComponent(query);
+                }
+            });
+            
+            // Allow pressing Enter to search
+            button.parentElement.querySelector('input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    button.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

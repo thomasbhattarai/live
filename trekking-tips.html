@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essential trekking tips for Nepal - preparation guide, altitude sickness prevention, packing list, and safety advice for Himalayan adventures.">
+    <meta name="keywords" content="Nepal trekking tips, altitude sickness, trekking preparation, packing list Nepal, trekking safety, Himalayan trekking guide">
+    <title>Trekking Tips for Nepal | Complete Preparation Guide | Discover Nepal</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Trekking Tips Page Styles */
+        .tips-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .tips-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        
+        .tips-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .tips-category {
+            margin: 50px 0;
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        .category-header i {
+            font-size: 2.5rem;
+            color: #3498db;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .tip-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid #3498db;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .tip-card.important {
+            border-top-color: #e74c3c;
+            background: linear-gradient(to right, #fff, #ffeaea);
+        }
+        
+        .tip-card.warning {
+            border-top-color: #f39c12;
+            background: linear-gradient(to right, #fff, #fff8e1);
+        }
+        
+        .tip-card.success {
+            border-top-color: #27ae60;
+            background: linear-gradient(to right, #fff, #e8f6f3);
+        }
+        
+        .tip-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        
+        .tip-card.important .tip-icon {
+            color: #e74c3c;
+        }
+        
+        .tip-card.warning .tip-icon {
+            color: #f39c12;
+        }
+        
+        .tip-card.success .tip-icon {
+            color: #27ae60;
+        }
+        
+        .packing-list {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .packing-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .packing-category {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+        }
+        
+        .packing-category h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .packing-category ul {
+            list-style-type: none;
+        }
+        
+        .packing-category li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .packing-category li:before {
+            content: "✓";
+            color: #27ae60;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .altitude-guide {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 50px 0;
+        }
+        
+        .altitude-stages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .altitude-stage {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stage-altitude {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        .checklist-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .checklist {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .checklist h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .checklist-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .checklist-item input {
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .tips-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tips-hero p {
+                font-size: 1.1rem;
+                padding: 0 20px;
+            }
+            
+            .altitude-guide {
+                padding: 25px;
+            }
+        }
+        
+        .print-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            background: #f1f8ff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Discover<span>Nepal</span></a>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore-nepal.html">Explore Nepal</a></li>
+                    <li><a href="trekking-in-nepal.html">Trekking</a></li>
+                    <li><a href="tours-in-nepal.html">Tours</a></li>
+                    <li><a href="travel-packages.html">Packages</a></li>
+                    <li><a href="travel-guide.html">Travel Guide</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Tips Hero -->
+    <section class="tips-hero">
+        <div class="container">
+            <h1>Trekking Tips for Nepal</h1>
+            <p>Your complete guide to preparing for a safe, enjoyable, and unforgettable Himalayan trekking adventure. From physical preparation to altitude management, we've got you covered.</p>
+            <div class="cta-buttons">
+                <a href="#preparation" class="btn">Start Reading</a>
+                <a href="trekking-in-nepal.html" class="btn btn-outline">View Treks</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preparation Tips -->
+    <section class="section" id="preparation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Essential Trekking Preparation</h2>
+                <p>Get ready for your Himalayan adventure with these crucial tips</p>
+            </div>
+            
+            <div class="tips-category">
+                <div class="category-header">
+                    <i class="fas fa-dumbbell"></i>
+                    <div>
+                        <h3>Physical Preparation</h3>
+                        <p>Get your body ready for high altitude trekking</p>
+                    </div>
+                </div>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h4>Start Training Early</h4>
+                        <p>Begin cardiovascular training 2-3 months before your trek. Focus on hiking, stair climbing, and uphill walking with a loaded backpack.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-lungs"></i>
+                        </div>
+                        <h4>Build Endurance</h4>
+                        <p>Gradually increase training duration. Aim for 4-5 hours of continuous activity to build stamina for long trekking days.</p>
+                    </div>
+                    
+                    <div class="tip-card important">
+                        <div class="tip-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h4>Altitude Simulation</h4>
+                        <p>If possible, include high-altitude training or use altitude simulation masks. Focus on building lung capacity and efficient breathing.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tips-category">
+                <div class="category-header">
+                    <i class="fas fa-suitcase-rolling"></i>
+                    <div>
+                        <h3>Packing Essentials</h3>
+                        <p>What to bring (and what to leave behind)</p>
+                    </div>
+                </div>
+                
+                <div class="packing-list">
+                    <h3>Complete Trekking Packing List</h3>
+                    <p>Pack smart - remember, you'll be carrying everything yourself or with a porter!</p>
+                    
+                    <div class="packing-categories">
+                        <div class="packing-category">
+                            <h4><i class="fas fa-hiking"></i> Clothing</h4>
+                            <ul>
+                                <li>Moisture-wicking base layers</li>
+                                <li>Insulating mid-layers (fleece/down)</li>
+                                <li>Waterproof jacket & pants</li>
+                                <li>Quick-dry trekking pants</li>
+                                <li>Warm hat & sun hat</li>
+                                <li>Gloves (light & heavy)</li>
+                                <li>Hiking socks (multiple pairs)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="packing-category">
+                            <h4><i class="fas fa-shoe-prints"></i> Footwear & Gear</h4>
+                            <ul>
+                                <li>Broken-in hiking boots</li>
+                                <li>Camp shoes/sandals</li>
+                                <li>Trekking poles</li>
+                                <li>Headlamp with extra batteries</li>
+                                <li>Water bottles/hydration system</li>
+                                <li>Sleeping bag (-10°C to -20°C)</li>
+                                <li>Sleeping bag liner</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="packing-category">
+                            <h4><i class="fas fa-first-aid"></i> Health & Safety</h4>
+                            <ul>
+                                <li>Personal first aid kit</li>
+                                <li>Altitude sickness medication</li>
+                                <li>Water purification tablets/filter</li>
+                                <li>Sunscreen (SPF 50+)</li>
+                                <li>Lip balm with SPF</li>
+                                <li>Hand sanitizer</li>
+                                <li>Basic toiletries</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="packing-category">
+                            <h4><i class="fas fa-camera"></i> Miscellaneous</h4>
+                            <ul>
+                                <li>Camera with extra batteries</li>
+                                <li>Power bank & solar charger</li>
+                                <li>Quick-dry towel</li>
+                                <li>Lightweight backpack (daypack)</li>
+                                <li>Waterproof bags for electronics</li>
+                                <li>Snacks (energy bars, nuts)</li>
+                                <li>Travel documents & permits</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="print-section">
+                        <button onclick="window.print()" class="btn">
+                            <i class="fas fa-print"></i> Print This Packing List
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="altitude-guide">
+                <div class="section-title" style="color: white;">
+                    <h2>Altitude Sickness Prevention</h2>
+                    <p>How to recognize, prevent, and treat altitude sickness</p>
+                </div>
+                
+                <div class="altitude-stages">
+                    <div class="altitude-stage">
+                        <div class="stage-altitude">2,500m - 3,500m</div>
+                        <h4>Mild Altitude</h4>
+                        <p>Mild symptoms may appear. Ascend slowly, stay hydrated.</p>
+                    </div>
+                    
+                    <div class="altitude-stage">
+                        <div class="stage-altitude">3,500m - 5,500m</div>
+                        <h4>High Altitude</h4>
+                        <p>Altitude sickness common. Diamox may help acclimatization.</p>
+                    </div>
+                    
+                    <div class="altitude-stage">
+                        <div class="stage-altitude">Above 5,500m</div>
+                        <h4>Extreme Altitude</h4>
+                        <p>High risk of AMS, HAPE, HACE. Professional guidance essential.</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Golden Rules of Altitude:</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 15px;">
+                        <div><strong>1. Climb High, Sleep Low:</strong> Gain altitude during day, descend to sleep</div>
+                        <div><strong>2. Go Slow:</strong> Don't ascend more than 300-500m per day above 3,000m</div>
+                        <div><strong>3. Stay Hydrated:</strong> Drink 3-4 liters of water daily</div>
+                        <div><strong>4. Listen to Your Body:</strong> Headache, nausea, dizziness = warning signs</div>
+                        <div><strong>5. Descend if Symptoms Worsen:</strong> Immediate descent is the best treatment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- On The Trail Tips -->
+    <section class="section" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-title">
+                <h2>On The Trail Tips</h2>
+                <p>Smart practices during your trek</p>
+            </div>
+            
+            <div class="checklist-container">
+                <div class="checklist">
+                    <h3><i class="fas fa-check-circle"></i> Daily Trekking Routine</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="routine1">
+                        <label for="routine1"><strong>Early Starts:</strong> Begin trekking by 7 AM to avoid afternoon clouds/rain</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="routine2">
+                        <label for="routine2"><strong>Pace Yourself:</strong> Maintain a slow, steady pace - it's not a race</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="routine3">
+                        <label for="routine3"><strong>Regular Breaks:</strong> Take short breaks every 45-60 minutes</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="routine4">
+                        <label for="routine4"><strong>Stay Hydrated:</strong> Sip water regularly, not just when thirsty</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="routine5">
+                        <label for="routine5"><strong>Snack Smart:</strong> Eat small snacks throughout the day for energy</label>
+                    </div>
+                </div>
+                
+                <div class="checklist">
+                    <h3><i class="fas fa-shield-alt"></i> Safety Checklist</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="safety1">
+                        <label for="safety1"><strong>Guide Communication:</strong> Always inform guide if leaving the group</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="safety2">
+                        <label for="safety2"><strong>Trail Markings:</strong> Follow trail markers and don't take shortcuts</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="safety3">
+                        <label for="safety3"><strong>Weather Awareness:</strong> Turn back if weather deteriorates</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="safety4">
+                        <label for="safety4"><strong>River Crossings:</strong> Cross rivers carefully, preferably with group</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="safety5">
+                        <label for="safety5"><strong>Emergency Contacts:</strong> Keep emergency numbers accessible</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tips-grid" style="margin-top: 40px;">
+                <div class="tip-card success">
+                    <div class="tip-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Leave No Trace</h4>
+                    <p>Carry out all trash, use established toilets, and minimize environmental impact. Respect the fragile Himalayan ecosystem.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h4>Porter Welfare</h4>
+                    <p>Respect porters' limits (max 30kg). Ensure they have proper clothing and shelter. Tip fairly at trek's end.</p>
+                </div>
+                
+                <div class="tip-card warning">
+                    <div class="tip-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4>Photography Etiquette</h4>
+                    <p>Always ask permission before photographing people. Some religious sites prohibit photography. Respect local customs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Advice -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Seasonal Trekking Advice</h2>
+                <p>What to expect in different seasons</p>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card" style="border-top-color: #27ae60;">
+                    <div class="tip-icon" style="color: #27ae60;">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h4>Spring (March-May)</h4>
+                    <p><strong>Best for:</strong> Rhododendron blooms, clear skies<br>
+                    <strong>Tips:</strong> Book early, trails can be crowded. Layer clothing for varying temperatures.</p>
+                </div>
+                
+                <div class="tip-card" style="border-top-color: #3498db;">
+                    <div class="tip-icon" style="color: #3498db;">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h4>Autumn (Sept-Nov)</h4>
+                    <p><strong>Best for:</strong> Stable weather, clear mountain views<br>
+                    <strong>Tips:</strong> Most popular season. Cold nights at high altitude. Prepare for busy teahouses.</p>
+                </div>
+                
+                <div class="tip-card" style="border-top-color: #f39c12;">
+                    <div class="tip-icon" style="color: #f39c12;">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h4>Monsoon (June-Aug)</h4>
+                    <p><strong>Best for:</strong> Lush greenery, fewer crowds<br>
+                    <strong>Tips:</strong> Quality rain gear essential. Leeches common. Some regions inaccessible.</p>
+                </div>
+                
+                <div class="tip-card" style="border-top-color: #95a5a6;">
+                    <div class="tip-icon" style="color: #95a5a6;">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h4>Winter (Dec-Feb)</h4>
+                    <p><strong>Best for:</strong> Solitude, clear skies<br>
+                    <strong>Tips:</strong> Extreme cold at high altitude. Some passes closed. Requires winter gear.</p>
+                </div>
+            </div>
+            
+            <div class="cta-section" style="text-align: center; margin-top: 50px; padding: 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;">
+                <h3>Ready for Your Trekking Adventure?</h3>
+                <p>Our experienced guides have led thousands of trekkers safely through the Himalayas. We handle all the details so you can focus on the experience.</p>
+                <div class="cta-buttons" style="margin-top: 30px;">
+                    <a href="contact.html" class="btn" style="background: white; color: #764ba2;">Get Expert Advice</a>
+                    <a href="trekking-in-nepal.html" class="btn btn-outline" style="border-color: white; color: white;">View All Treks</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Discover Nepal</h3>
+                    <p>Your trusted partner for unforgettable Himalayan adventures since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="nepali-festivals.html">Nepali Festivals</a></li>
+                        <li><a href="trekking-tips.html" class="active">Trekking Tips</a></li>
+                        <li><a href="travel-guide.html">Travel Guide</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Trekking Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="trekking-tips.html#preparation">Preparation Guide</a></li>
+                        <li><a href="trekking-tips.html#altitude">Altitude Advice</a></li>
+                        <li><a href="contact.html">Ask a Guide</a></li>
+                        <li><a href="travel-packages.html">Trekking Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977-1-1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@discovernepal.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +977-9801234567</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear2"></span> Discover Nepal Travel. All rights reserved. | 
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="terms-conditions.html">Terms & Conditions</a> | 
+                    <a href="cancellation-policy.html">Cancellation Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear2').textContent = new Date().getFullYear();
+        
+        // Mobile menu functionality
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+        
+        // Checklist functionality
+        document.querySelectorAll('.checklist-item input').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const label = this.nextElementSibling;
+                if(this.checked) {
+                    label.style.textDecoration = 'line-through';
+                    label.style.opacity = '0.7';
+                } else {
+                    label.style.textDecoration = 'none';
+                    label.style.opacity = '1';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

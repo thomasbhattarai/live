@@ -1,0 +1,104 @@
+# Discover Nepal Travel - Robots.txt
+# Last updated: March 2024
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /includes/
+Disallow: /tmp/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://www.discovernepal.com/sitemap.xml
+
+# Crawl delay for search engines (in seconds)
+Crawl-delay: 2
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /cgi-bin/
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Disallow: /admin/
+Crawl-delay: 3
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /admin/
+Disallow: /cgi-bin/
+Crawl-delay: 5
+
+# Disallow specific search engines if needed
+User-agent: MJ12bot
+Disallow: /
+
+# Allow image crawling for search engines
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Disallow certain file types
+User-agent: *
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /*.ppt$
+Disallow: /*.pptx$
+
+# Allow CSS and JS files for proper rendering
+User-agent: *
+Allow: /css/
+Allow: /js/
+
+# Disallow query parameters that might create duplicate content
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?page=
+Disallow: /*?session=
+Disallow: /*?cart=
+Disallow: /*?checkout=
+
+# Allow important query parameters
+Allow: /*?lang=
+Allow: /*?currency=
+
+# Specific page rules
+User-agent: *
+Allow: /sitemap.html
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Country specific targeting (optional)
+# User-agent: *
+# Disallow: /*?country=*
+
+# Clean URLs only
+User-agent: *
+Disallow: /*.php$
+Allow: /*.html$
+
+# Mobile user agents
+User-agent: iPhone
+User-agent: iPod
+User-agent: iPad
+User-agent: Android
+User-agent: Mobile
+Allow: /
+Crawl-delay: 1
+
+# Host directive
+Host: www.discovernepal.com
