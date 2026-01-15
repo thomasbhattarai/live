@@ -728,12 +728,14 @@ footer {
         top: 70px;
         left: -100%;
         width: 100%;
+        height: calc(100vh - 70px);
         flex-direction: column;
         background-color: white;
         padding: 2rem;
         box-shadow: var(--box-shadow);
         transition: var(--transition);
         z-index: 1000;
+        overflow-y: auto;
     }
     
     .nav-links.active {
